@@ -11,10 +11,14 @@
     <h1>Desafio de Desenvolvimento</h1>
     
     <p>Escolha o desafio:</p>
-    <select id="challengeSelector">
-      <option value="processarPedidos">Processar Pedidos</option>
-      <option value="dijkstra">Algoritmo de Dijkstra</option>
-    </select>
+
+    <div class="radio-buttons">
+      <input type="radio" id="processarPedidos" name="challenge" value="processarPedidos" checked>
+      <label for="processarPedidos">Processar Pedidos</label>
+    
+      <input type="radio" id="dijkstra" name="challenge" value="dijkstra">
+      <label for="dijkstra">Algoritmo de Dijkstra</label>
+    </div>
 
     <p id="challengeDescription"></p>
 
@@ -22,7 +26,12 @@
 
     <input type="text" id="userName" placeholder="Seu Nome" />
     
-    <button id="runTests">Rodar Testes</button>
+    <div class="buttons-container">
+      <button id="showHints">Mostrar Dicas</button>
+      <button id="runTests">Rodar Testes</button>
+    </div>
+
+    <div id="hints"></div>
 
     <div id="result"></div>
   </div>
