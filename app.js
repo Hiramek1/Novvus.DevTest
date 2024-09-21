@@ -129,6 +129,19 @@ const challenges = {
     const selectedChallenge = event.target.value;
     const description = challenges[selectedChallenge].description;
     document.getElementById('challengeDescription').textContent = description;
+  
+    // Define a função esqueleto para cada desafio
+    const functionSkeletons = {
+      processarPedidos: `function processarPedidos(pedidos) {
+        // Sua lógica aqui
+      }`,
+      dijkstra: `function dijkstra(graph, startNode) {
+        // Sua lógica aqui
+      }`
+    };
+  
+    // Atualiza o campo codeInput com a função esqueleto do desafio selecionado
+    document.getElementById('codeInput').value = functionSkeletons[selectedChallenge];
   });
   
   // Inicializa o botão para rodar os testes
@@ -145,4 +158,4 @@ const challenges = {
   });
   
   // Inicializa a página com o primeiro desafio
-  document.getElementById('challengeSelector').dispatchEvent(new Event('change'));  
+  document.getElementById('challengeSelector').dispatchEvent(new Event('change'));
