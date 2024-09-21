@@ -133,11 +133,11 @@ const challenges = {
     // Define a função esqueleto para cada desafio
     const functionSkeletons = {
       processarPedidos: `function processarPedidos(pedidos) {
-        // Sua lógica aqui
-      }`,
+        // Seu JavaScript aqui
+  }`,
       dijkstra: `function dijkstra(graph, startNode) {
-        // Sua lógica aqui
-      }`
+        // Seu JavaScript aqui
+  }`
     };
   
     // Atualiza o campo codeInput com a função esqueleto do desafio selecionado
